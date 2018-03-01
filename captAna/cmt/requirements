@@ -31,7 +31,7 @@ macro_append linkdef_dependencies " register "
 # Build information used by packages that use this one.
 macro captAna_cppflags " -DCAPTANA_USED "
 macro captAna_linkopts " -L$(CAPTANAROOT)/$(captAna_tag) "
-macro_append captAna_linkopts " -L/home/captain/software/LCGCMT/2.0.3/EXTERNALS/ROOT/5.34.34/x86_64-linux-gcc44-opt/lib -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic"
+macro_append captAna_linkopts " -L/home/captain/software/LCGCMT/2.0.4/EXTERNALS/GSL/1.10/x86_64-linux-gcc48-opt/gsl-1.10/.libs/ -lgsl -L/home/captain/software/LCGCMT/2.0.4/EXTERNALS/GSL/1.10/x86_64-linux-gcc48-opt/gsl-1.10/cblas/.libs/ -lgslcblas -L/home/captain/software/LCGCMT/2.0.3/EXTERNALS/ROOT/5.34.34/x86_64-linux-gcc44-opt/lib -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lMemStat -lMinuit2 -lThread -pthread -lm -ldl -rdynamic"
 macro_append captAna_linkopts " -lcaptAna "
 macro captAna_stamps " $(captAnastamp) $(linkdefstamp) "
 
