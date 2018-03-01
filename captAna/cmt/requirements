@@ -39,6 +39,8 @@ macro captAna_stamps " $(captAnastamp) $(linkdefstamp) "
 # The paths to find this library and it's executables
 path_remove LD_LIBRARY_PATH "$(CAPTANAROOT)"
 path_prepend LD_LIBRARY_PATH "$(CAPTANAROOT)/$(captAna_tag)"
+path_prepend LD_LIBRARY_PATH "/home/captain/software/LCGCMT/2.0.4/EXTERNALS/GSL/1.10/x86_64-linux-gcc48-opt/gsl-1.10/.libs/"
+path_prepend LD_LIBRARY_PATH "/home/captain/software/LCGCMT/2.0.4/EXTERNALS/GSL/1.10/x86_64-linux-gcc48-opt/gsl-1.10/cblas/.libs"
 
 # Build the library for this package.
 library captAna *.cxx *.hxx $(bin)dict/*.cxx
